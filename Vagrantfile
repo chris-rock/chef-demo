@@ -1,6 +1,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# create cache dir, if not available
+require 'fileutils'
+FileUtils.mkdir_p '.cache'
+
 Vagrant.configure(2) do |config|
 
   config.vm.define "server" do |server|
