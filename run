@@ -33,17 +33,24 @@ end
 # print help
 def print_help
   puts "
-#{$0} [start|stop] [<number>]
+#{$0}
+    [prepare]
+    Boots VMs and prepares the Docker image
+
+    [start] [<number>]
     Starts a given number of containers with chef-client.
     The client automatically registers at the chef server.
+
+    [stop]
+    Stops all running chef-clients.
   "
 end
 
 args=ARGV.drop(1)
 case  ARGV[0]
-when 'start'
+when 'prepare'
   start_vms
-when 'clients'
+when 'start'
   docker_start ARGV[1].to_i
 when 'stop'
   docker_clean
