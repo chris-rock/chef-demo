@@ -1,0 +1,7 @@
+.vagrant/machines/analytics/virtualbox
+.vagrant
+.cache
+shared/adminkey.pem
+shared/brewinc-validator.pem
+shared/opscode-analytics/actions-source.json
+shared/opscode-analytics/webui_priv.pem
