@@ -3,7 +3,7 @@
 This project illustrates a setup of the Chef ecosystem. Currently,
 it includes the following products:
 
-- Chef Server (including Chef Manage) running in a VM on
+- Chef Server (including Chef Manage) running in a VM
 - Chef Analytics running in separate VM
 - Chef Clients running in Docker container
 
