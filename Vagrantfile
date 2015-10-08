@@ -25,7 +25,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define "analytics" do |analytics|
     analytics.vm.box = "bento/ubuntu-14.04"
-    server.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box"
+    analytics.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box"
     analytics.vm.hostname = "chef-analytics"
     analytics.vm.network "private_network", ip: "192.168.34.11"
     analytics.vm.synced_folder "./shared", "/vagrant"
